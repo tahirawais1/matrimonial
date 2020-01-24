@@ -13,7 +13,7 @@ class Profile extends Model
      * @var array
      */
     protected $fillable = [
-        'email','password' ,'phone' ,'name' ,'gender' ,'cast' ,'image' ,'city' ,'country' ,'address' ,'religion' ,'mother_tongue' ,'martial_status' ,'height' ,'educationLevel' ,'educationField' ,'profession' ,'income' ,'ProfileCreatedBy' ,'age' ,'description' ,'familyDetail' ,'Pref_Cast' ,'Pref_martialStatus' ,'Pref_educationLevel' ,'Pref_educationField' ,'Pref_city' ,'Pref_country' ,'Pref_height' ,'Pref_religion' ,'Pref_motherTongue' ,'Pref_profession' ,'Pref_income'
+        'email','password','community','phone' ,'name' ,'gender' ,'cast' ,'image' ,'city' ,'country' ,'address' ,'religion' ,'mother_tongue' ,'martial_status' ,'height' ,'educationLevel' ,'educationField' ,'profession' ,'income' ,'profileCreatedBy' ,'age' ,'description' ,'familyDetail' ,'pref_Cast' ,'pref_martialStatus' ,'pref_educationLevel' ,'pref_educationField' ,'pref_city' ,'pref_country' ,'pref_height' ,'pref_religion' ,'pref_motherTongue' ,'pref_profession','pref_community' ,'pref_income'
     ];
 
     /**
