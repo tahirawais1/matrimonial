@@ -16,33 +16,40 @@ class CreateProfilesTable extends Migration
         Schema::create('profiles', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('email')->unique();
-
             $table->string('password');
-            $table->string('create_profile_for');
+            $table->bigInteger('phone')->unique();
+            $table->string('name');
             $table->string('gender');
-            $table->string('first_name');
-            $table->string('last_name');
-            $table->string('dob');
-            $table->string('religion');
-            $table->string('mother_tongue');
-            $table->string('country');
-            $table->string('city');
-            $table->string('lives_with_parents');
-            $table->string('martial_status');
-            $table->string('diet');
-            $table->string('height');
             $table->string('cast');
-            $table->string('education_level');
-            $table->string('education_field');
+            $table->string('image');
+            $table->string('city');
+            $table->string('country');
+            $table->string('address');
+            $table->string('religion');
+            $table->string('community');
+            $table->string('mother_tongue');
+            $table->string('martial_status');
+            $table->string('height');
+            $table->string('educationLevel');
+            $table->string('educationField');
             $table->string('profession');
-            $table->string('instiute');
-            $table->string('company');
-            $table->string('income_type');
-            $table->string('works_with');
-            $table->string('income_amount');
-            $table->string('mobile_number');
-            $table->string('description');
-            $table->string('photos');
+            $table->string('income');
+            $table->string('profileCreatedBy');
+            $table->string('age');
+            $table->longText('description');
+            $table->longText('familyDetail');
+            $table->string('pref_Cast');
+            $table->string('pref_community');
+            $table->string('pref_martialStatus');
+            $table->string('pref_educationLevel');
+            $table->string('pref_educationField');
+            $table->string('pref_city');
+            $table->string('pref_country');
+            $table->string('pref_height');
+            $table->string('pref_religion');
+            $table->string('pref_motherTongue');
+            $table->string('pref_profession');
+            $table->string('pref_income');
 
             $table->timestamps();
         });
@@ -58,3 +65,4 @@ class CreateProfilesTable extends Migration
         Schema::dropIfExists('profiles');
     }
 }
+

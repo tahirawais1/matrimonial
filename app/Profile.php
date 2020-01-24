@@ -12,7 +12,8 @@ class Profile extends Model
      *
      * @var array
      */
-    protected $fillable = ['email','password','create_profile_for','first_name','gender','last_name','dob','religion','mother_tongue','country','city','lives_with_parents','martial_status','diet','height','cast','education_level','education_field','profession','instiute','company','income_type','works_with','income_amount','mobile_number','description','photos'
+    protected $fillable = [
+        'email','password','community','phone' ,'name' ,'gender' ,'cast' ,'image' ,'city' ,'country' ,'address' ,'religion' ,'mother_tongue' ,'martial_status' ,'height' ,'educationLevel' ,'educationField' ,'profession' ,'income' ,'profileCreatedBy' ,'age' ,'description' ,'familyDetail' ,'pref_Cast' ,'pref_martialStatus' ,'pref_educationLevel' ,'pref_educationField' ,'pref_city' ,'pref_country' ,'pref_height' ,'pref_religion' ,'pref_motherTongue' ,'pref_profession','pref_community' ,'pref_income'
     ];
 
     /**
@@ -20,5 +21,5 @@ class Profile extends Model
      *
      * @var array
      */
-    protected $hidden = [];
+    protected $hidden = ['password'];
 }
